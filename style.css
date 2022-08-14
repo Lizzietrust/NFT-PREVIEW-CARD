@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    height: 500px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image {
+    position: relative;
+    width: 280px;
+}
+
+.card-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 7px;
+    display: block;
+    transition: all 1s ease;
+}
+
+.hover {
+    background-color: hsl(178, 100%, 50%);
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    border-radius: 7px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hover:hover {
+    opacity: .5;
+    cursor: pointer;  
+}
+
+.hover img {
+    color: hsl(0, 0%, 100%);
+    width: 50px;
+    height: 50px; 
+}
+
+/*.card-img:hover {
+    cursor: pointer;
+    background-image: url(./nft-preview-card-component-main/images/icon-view.svg);
+    background-color: hsl(178, 100%, 50%);
+    opacity: .3;
+    z-index: .5;
+}
+
+
+
+
+*/
+
+.main h3 {
+    margin: 10px 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.main h3:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.main p {
+    color: hsl(215, 51%, 70%);
+}
+
+
+.eth-time {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 15px;
+}
+
+.eth-time .eth {
+    color: hsl(178, 100%, 50%);
+}
+
+.eth-time .time {
+    color: hsl(215, 51%, 70%);
+}
+
+.eth-time img {
+    margin-bottom: -3px;
+}
+
+.det {
+    display: flex;
+    align-items: center;
+}
+
+.det img {
+    width: 30px;
+    height: 30px;
+    border: 1.5px solid hsl(215, 51%, 70%);
+    border-radius: 50%;
+}
+
+.det .abt {
+    margin-left: 15px;
+    color: hsl(215, 51%, 70%);
+}
+
+.det .abt span {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+.det .abt span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
